@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>McFly System - Login</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body class="login-body">
+
+    <div class="login-container">
+        <h1 class="login-title">McFly System 🔥</h1>
+        <p class="login-sub">Acesso restrito</p>
+
+        <form action="/login" method="post">
+            <label>Usuário</label>
+            <input type="text" name="username" placeholder="Digite seu usuário" required>
+
+            <label>Senha</label>
+            <div class="password-container">
+                <input type="password" name="password" id="password" placeholder="Digite sua senha" required>
+                <img src="static/assets/eye-open.png" id="togglePassword" class="eye-icon" onclick="togglePassword()" alt="ver senha">
+            </div>
+
+            <button type="submit" class="login-btn">Entrar</button>
+        </form>
+    </div>
+
+    <div class="background-animation"></div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
